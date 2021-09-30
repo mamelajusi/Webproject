@@ -9,7 +9,7 @@ table{
 .headii{
     font-style: inherit;
     position: absolute;
-    top: 4%;
+    top: 7%;
     left: 38%;
     color: #8699b4;
 }
@@ -23,7 +23,7 @@ a{
 }
 .search-box{
 position: absolute;
-top: 17%;
+top: 20%;
 left: 75%;
 transform: translate(-50%,-50%);
 background: #2f3640;
@@ -86,7 +86,11 @@ tr{
     position: relative;
     display: flex;
     flex-direction: row;
+    
 
+}
+th{
+    padding: 10px;
 }
 tr th{
     list-style: none;
