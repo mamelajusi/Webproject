@@ -1,8 +1,10 @@
 table{
     color: black;
     background-color: black;
+    width: 1100px;
+    
 
-    width: 1000px;
+    
 }
 .headii{
     font-style: inherit;
@@ -79,4 +81,61 @@ left: 11%;
     top: 28%;
 left: 10%;
 font-size: 20px;
+}
+tr{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+tr th{
+    list-style: none;
+
+}
+tr th a{
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+
+}
+tr th a:hover{
+    color: rgba(255,255,255,0.1);
+    transition-delay: 0s;
+
+}
+tr th a::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 0.35em;
+    color: #3bffe8;
+    text-shadow: 0 0 10px #3bffe8,
+    0 0 10px #3bffe8,
+    0 0 10px #3bffe8 ;
+    font-weight: 500;
+    letter-spacing: 40px;
+    white-space: nowrap;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+
+    
+}
+tr th a:hover::before{
+    opacity: 1;
+    letter-spacing: 6px;
+    transition-delay: 0.5s;
+
+}
+.p2{
+    
 }
